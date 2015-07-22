@@ -27,6 +27,7 @@ Add Leaseweb\RRD in your composer.json:
 
 ## Usage
 
+
 ### Fluent API
 
 ```php
@@ -36,7 +37,6 @@ Add Leaseweb\RRD in your composer.json:
 require 'vendor/autoload.php';
 
 $rrdFetcher = new \RRD\Fetcher("database.rrd");
-
 $data = $rrdFetcher->end('now')
                    ->start('end-1h')
                    ->fetch(\RRD\Fetcher::CF_AVERAGE)
@@ -51,8 +51,21 @@ $data = $rrdFetcher->end('now')
 require 'vendor/autoload.php';
 
 $rrdFetcher = new \RRD\Fetcher("database.rrd");
-
 $data = $rrdFetcher->fetchFromArgs('AVERAGE', 300, '-1d', 'start+4h');
+```
+
+### Percentile calculation
+
+```php
+
+<?php
+
+require 'vendor/autoload.php';
+
+$rrdFetcher = new \RRD\Fetcher("database.rrd");
+$data = $rrdFetcher->end('now')
+                   ->start('end-1h')
+                   ->percentile('network_in', 95)
 ```
 
 
