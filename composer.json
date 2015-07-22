@@ -1,0 +1,26 @@
+{
+    "name": "leaseweb/rrd",
+    "description": "A RRD wrapper class to fetch data",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Daniel Martinez",
+            "email": "d.martinez@tech.leaseweb.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+      "php": ">=5.3.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "RRD\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "RRD\\Test\\": "tests"
+        }
+    }
+
+}

@@ -1,0 +1,12 @@
+<?php
+
+namespace RRD\Fetcher\Exception;
+
+/**
+ * Class Exception
+ * @package Lsw\RRD
+ */
+class Exception extends \Exception
+{
+
+}
