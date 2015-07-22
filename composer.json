@@ -1,6 +1,6 @@
 {
     "name": "leaseweb/rrd",
-    "description": "A RRD wrapper class to fetch data",
+    "description": "Library to work with RRD files",
     "license": "MIT",
     "authors": [
         {
