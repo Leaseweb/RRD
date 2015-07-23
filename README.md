@@ -11,6 +11,14 @@ At the moment, It provides a Fetcher class to access data from rrd files in a ea
 
 ## Installation
 
+In order to work with the library, you need to have the PHP extension enabled.
+In Ubuntu you can type:
+
+```bash
+    sudo apt-get install php5-rrd
+```
+
+
 ### Using composer
 
 Add Leaseweb\RRD in your composer.json:
